@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Semântico</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="navbar-inner">
+                <h2>Quadros de Van Gogh</h2>
+                <ul id="nav-links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Categoria</a></li>
+                    <li><a href="">Pinturas</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main id="posts-container">
+            <article class="post">
+                <img src="./img/amendoeira.jpg" alt="Quadro Amendoeira em Flor - Vicent Van Gogh">
+                <h3 class="tittle"><a href="#">A Amendoeira em Flor</a></h3>
+                <p class="description">
+                    Famosa pintura de Vincent van Gogh, criada em 1890. Esta obra é notável por suas cores vibrantes e pela representação delicada das flores de amendoeira. Van Gogh pintou esta peça como um presente para seu sobrinho, que estava nascendo na época, e a obra reflete a esperança e a renovação associadas à chegada de uma nova vida.
+                </p>
+                <p class="author">Por: João Vinícius </p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="post">
+                <img src="./img/nature.jpg" alt="Quadro natureza em Flor - Vicent Van Gogh">
+                <h3 class="tittle"><a href="#">Árvores e vegetação rasteira</a></h3>
+                <p class="description">
+                    Uma das obras menos conhecidas de Vincent van Gogh, pintada em 1889 durante sua estada no asilo de Saint-Paul-de-Mausole, em Saint-Rémy-de-Provence. Este período da vida de Van Gogh foi marcado por intensa criatividade e produção prolífica, apesar de suas lutas pessoais.
+                </p>
+                <p class="author">Por: João Vinícius </p>
+                <a href="#">Ler mais</a>
+            </article>
+            <article class="post">
+                <img src="./img/semeador.jpg" alt="Quadro O Semeador - Vicent Van Gogh">
+                <h3 class="tittle"><a href="#">O Semeador</a></h3>
+                <p class="description">
+                    Em "O Semeador", Van Gogh retrata uma figura solitária semeando sementes em um campo sob um céu dramático e rodopiante. A pintura reflete o fascínio de Van Gogh pelos ciclos da natureza e pelos temas do trabalho e da vida. O semeador, representado em cores ousadas e vibrantes, destaca-se contra os tons dourados do campo, característicos da pincelada e da paleta de cores distintas de Van Gogh. O céu de fundo, com seus padrões dinâmicos e rodopiantes, acrescenta uma sensação de movimento e energia à composição.
+                </p>
+                <p class="author">Por: João Vinícius </p>
+                <a href="#">Ler mais</a>
+            </article>
+        </main>
+        <aside id="sidebar">
+            <section id="search-bar">
+                <h4>Busca</h4>
+                <form>
+                    <input type="text" placeholder="Pesquisa no blog" />
+                    <input type="submit" value="Buscar" />
+                </form>
+            </section>
+            <section id="categories">
+                <h4>Categorias</h4>
+                <nav>
+                    <ul>
+                        <li><a href="#">Quadros</a></li>
+                        <li><a href="#">Aventuras</a></li>
+                        <li><a href="#">Viagens longas</a></li>
+                        <a href="#">Florestas</a>
+                    </ul>
+                </nav>
+            </section>
+            <section id="tags">
+                <h4>Tags</h4>
+                <div id="tags-container">
+                    <a href="#">A Amendoeira em Flor</a>
+                    <a href="#">Árvores e vegetação</a>
+                    <a href="#">O Semeador</a>
+                </div>
+            </section>
+        </aside>
+    </div>
+    <footer id="footer">
+        <h2>Blog</h2>
+        <p>Os melhores registros de aventura</p>
+        <p>2024 - @JaoVini</p>
+    </footer>
+</body>
+</html>
