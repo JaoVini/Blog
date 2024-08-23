@@ -5,16 +5,28 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-body{
-    background: linear-gradient(to bottom, #ccc, #ddd);
+/* variáveis de cores */
+:root{
+    --background-header: #CBD0B9;
+    --background-main: #CBC9AD;
+    --color-hover: #656839;
 }
+
+body{
+    background: var(--background-main);
+}
+
+header{
+    background: var(--background-header);
+}
+
 ul{
     list-style: none;
 }
 
 h2{
     opacity: 0.7;
-    color: #37a1f7;
+    color: var(--color-hover);
 }
 a{
     text-decoration: none;
@@ -23,7 +35,15 @@ a{
 }
 
 a:hover{
-    color: #37a1f7;
+    color: var(--color-hover);
+}
+
+article{
+    margin: 6rem 0rem;
+}
+
+li{
+    margin: 1rem 0px;
 }
 
 /* navbar */
@@ -42,11 +62,19 @@ a:hover{
 }
 
 #nav-links{
+    color: var(--color-hover);
     display: flex;
     gap: 1rem;
 }
 
 /* conteúdo principal */
+
+.conteudo{
+    width: 50%;
+    font-family: sans-serif;
+    font-weight: 100;
+    margin: 5rem 0rem;
+}
 
 .container{
     display: flex;
@@ -66,7 +94,7 @@ a:hover{
 
 .post img{
     cursor: pointer;
-    width: 80%;
+    width: 60%;
     margin-bottom: 1rem;
     border-radius: 20px;
     transition: 0.5s;
@@ -74,10 +102,10 @@ a:hover{
 }
 
 .post img:hover{
-    margin: 30px 0px;
-    scale: 1.1;
-    box-shadow: 2px 2px 20px #37a1f7;
-    filter: drop-shadow(1px 1px 20px #37a1f7); 
+    margin: 10px 1px;
+    scale: 1.0;
+    box-shadow: 2px 2px 10px var(--color-hover);
+    filter: drop-shadow(1px 1px 10px var(--color-hover)); 
 }
 
 .tittle,
@@ -93,6 +121,34 @@ a:hover{
 .author{
     color: #333;
     font-weight: bold;
+}
+
+button{
+    width: 20%;
+    padding: 1rem;
+    cursor: pointer;
+    border-radius: 11px;
+    border: 2px solid var(--color-hover);
+    background-color: transparent;
+}
+
+button:hover{
+    background-color: var(--color-hover);
+}
+
+.button_menos{
+    display: none;
+}
+
+.description,
+.description_extend{
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+.description_extend{
+    margin: 2rem 0px;
+    display: none;
 }
 
 /* barra lateral */
@@ -127,9 +183,10 @@ a:hover{
 
 #search-bar input[type="submit"]{
     cursor: pointer;
-    background-color: #37a1f7;
+    background-color: var(--color-hover);
     color: #fff;
     border: none;
+
 }
 
 #tags-container{
@@ -159,8 +216,62 @@ a:hover{
 
 /* responsivo */
 
-@media(max-width: 450px){
+@media(max-width: 600px){
     .container{
+        justify-content: center;
+        text-align: center;
         flex-wrap: wrap;
+    }
+
+    .tittle{
+        margin: 1.5rem auto;
+        font-size: 1.5rem;
+        width: 80%;
+    }
+
+    .description,
+    .description_extend{
+        width: 85%;
+        margin: 1rem auto;
+    }
+
+    button{
+        margin: auto;
+        width: 50%;}
+    
+    .conteudo{
+        color: var(--color-hover);
+        font-size: 0.7rem;
+        width: 100%;
+        margin: 3rem auto;
+    }
+
+    .navbar-inner{
+        font-size: medium;
+        justify-content: center;
+    }
+
+    .navbar-inner h2{
+        display: none;
+    }
+
+    input,
+    #sidebar,
+    #tags-container{
+    justify-content: center;
+    margin: 0px auto;
+}
+
+    li{
+        margin: 1rem 0rem;
+    }
+
+    #search-bar input[type="submit"]{
+        background-color: var(--color-hover);
+    }
+
+    footer{
+        margin: auto;
+        width: 50%;
     }
 }

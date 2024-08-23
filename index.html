@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Semântico</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/stylesheet/styles.css">
+    <script src="/javascript/scripts.js" defer></script>
 </head>
 <body>
     <header>
@@ -20,33 +21,72 @@
         </nav>
     </header>
     <div class="container">
+        
         <main id="posts-container">
+            <div class="conteudo">
+                <h1>Top melhores quadros de Vincent Van Gogh</h1>
+                <p><i>Na minha opinião</i></p>
+            </div>
+            
             <article class="post">
-                <img src="./img/amendoeira.jpg" alt="Quadro Amendoeira em Flor - Vicent Van Gogh">
                 <h3 class="tittle"><a href="#">A Amendoeira em Flor</a></h3>
+                <img src="./img/amendoeira.jpg" alt="Quadro Amendoeira em Flor - Vicent Van Gogh">
                 <p class="description">
-                    Famosa pintura de Vincent van Gogh, criada em 1890. Esta obra é notável por suas cores vibrantes e pela representação delicada das flores de amendoeira. Van Gogh pintou esta peça como um presente para seu sobrinho, que estava nascendo na época, e a obra reflete a esperança e a renovação associadas à chegada de uma nova vida.
+                    Grandes ramos floridos como este contra um céu azul eram um dos temas favoritos de Van Gogh. As amendoeiras florescem no início da primavera, tornando-as um símbolo de uma nova vida. Van Gogh emprestou o tema, os contornos arrojados e o posicionamento da árvore no plano do quadro da gravura japonesa.
                 </p>
                 <p class="author">Por: João Vinícius </p>
-                <a href="#">Ler mais</a>
+                <button onclick="lerMais(0, 0, 0,0)" class="button_mais" id="button_mais_one">Ler mais</button>
+                <button onclick="lerMenos(0, 0, 0, 0)" class="button_menos" id="button_menos_one">Ler menos</button>
+                <div class="description_extend" id="description_extend_post_one">
+                    <p class="description">
+                        Famosa pintura de Vincent van Gogh, criada em 1890. Esta obra é notável por suas cores vibrantes e pela representação delicada das flores de amendoeira. Van Gogh pintou esta peça como um presente para seu sobrinho, que estava nascendo na época, e a obra reflete a esperança e a renovação associadas à chegada de uma nova vida.
+                    </p>
+                </div>
             </article>
             <article class="post">
-                <img src="./img/nature.jpg" alt="Quadro natureza em Flor - Vicent Van Gogh">
-                <h3 class="tittle"><a href="#">Árvores e vegetação rasteira</a></h3>
+                <h3 class="tittle"><a href="#">Comedores de Batatas</a></h3>
+                <img src="./img/the_potato_eaters.jpg" alt="Quadro natureza em Flor - Vicent Van Gogh">
                 <p class="description">
-                    Uma das obras menos conhecidas de Vincent van Gogh, pintada em 1889 durante sua estada no asilo de Saint-Paul-de-Mausole, em Saint-Rémy-de-Provence. Este período da vida de Van Gogh foi marcado por intensa criatividade e produção prolífica, apesar de suas lutas pessoais.
+                    Van Gogh viu os Comedores de Batata como uma obra de arte, para a qual escolheu deliberadamente uma composição difícil para provar que estava a caminho de se tornar um bom pintor de figuras. A pintura deveria retratar a dura realidade da vida no campo, por isso deu aos camponeses rostos rudes e mãos ossudas e trabalhadoras. Ele queria mostrar desta forma que eles próprios “cultivaram a terra com estas mãos que põem no prato... que assim ganharam honestamente a sua comida”.
                 </p>
                 <p class="author">Por: João Vinícius </p>
-                <a href="#">Ler mais</a>
+                <button onclick="lerMais(1,1,1)" class="button_mais" id="button_mais_two">Ler mais</button>
+                <button onclick="lerMenos(1,1,1)" class="button_menos" id="button_menos_two">Ler menos</button>
+                <div class="description_extend" id="description_extend_post_two">
+                    <p class="description">
+                        Ele pintou as cinco figuras em cores terrosas – “algo como a cor de uma batata bem empoeirada, com casca, é claro”. A mensagem da pintura era mais importante para Van Gogh do que a anatomia correta ou a perfeição técnica. Ele ficou muito satisfeito com o resultado: ainda assim, sua pintura atraiu críticas consideráveis ​​porque suas cores eram muito escuras e as figuras cheias de erros. Hoje em dia, Os Comedores de Batata é uma das obras mais famosas de Van Gogh.
+                    </p>
+                </div>
             </article>
             <article class="post">
-                <img src="./img/semeador.jpg" alt="Quadro O Semeador - Vicent Van Gogh">
                 <h3 class="tittle"><a href="#">O Semeador</a></h3>
+                <img src="./img/o_semeador.jpg" alt="Quadro O Semeador - Vicent Van Gogh">
                 <p class="description">
-                    Em "O Semeador", Van Gogh retrata uma figura solitária semeando sementes em um campo sob um céu dramático e rodopiante. A pintura reflete o fascínio de Van Gogh pelos ciclos da natureza e pelos temas do trabalho e da vida. O semeador, representado em cores ousadas e vibrantes, destaca-se contra os tons dourados do campo, característicos da pincelada e da paleta de cores distintas de Van Gogh. O céu de fundo, com seus padrões dinâmicos e rodopiantes, acrescenta uma sensação de movimento e energia à composição.
+                    Van Gogh teve um interesse especial pelos semeadores ao longo de sua carreira artística. Ao todo, fez mais de 30 desenhos e pinturas sobre o tema. Ele pintou este semeador no outono de 1888. Na época, Van Gogh trabalhava junto com Paul Gauguin (1848-1903). Gauguin acreditava que em seu trabalho Van Gogh deveria recorrer menos à realidade e mais à sua imaginação.
                 </p>
                 <p class="author">Por: João Vinícius </p>
-                <a href="#">Ler mais</a>
+                <button onclick="lerMais(2,2,2)" class="button_mais" id="button_mais_three">Ler mais</button>
+                <button onclick="lerMenos(2,2,2)" class="button_menos" id="button_menos_three">Ler menos</button>
+                <div class="description_extend" id="description_extend_post_three">
+                    <p class="description">
+                        Aqui, Van Gogh usou cores para expressar emoção e paixão. Ele atribuiu os papéis principais ao amarelo esverdeado do céu e ao roxo do campo. O sol amarelo brilhante parece uma auréola, transformando o semeador em um santo.
+                    </p>
+                </div>
+            </article>
+            <article class="post">
+                <h3 class="tittle"><a href="#">Noite Estrelada</a></h3>
+                <img src="./img/starry_night.jpg" alt="Quadro Amendoeira em Flor - Vicent Van Gogh">
+                <p class="description">
+                    A escolha de Van Gogh de representar um céu noturno tão dinâmico e emotivo reflete sua própria luta interna e a busca por significado em um mundo muitas vezes confuso. Ele usou cores fortes e pinceladas expressivas para transmitir a intensidade emocional que sentia. A combinação do céu dramático e da paisagem serena cria um contraste que dá profundidade à pintura.
+                </p>
+                <p class="author">Por: João Vinícius </p>
+                <button onclick="lerMais(3, 3, 3,3)" class="button_mais_" id="button_mais_for">Ler mais</button>
+                <button onclick="lerMenos(3, 3, 3, 3)" class="button_menos" id="button_menos_for">Ler menos</button>
+                <div class="description_extend" id="description_extend_post_for">
+                    <p class="description">
+                        “A Noite Estrelada” também é notável por sua técnica inovadora. Van Gogh usou pinceladas rápidas e espessas, o que dá à obra uma textura rica e um movimento que captura a energia do céu noturno. Essa abordagem ajudou a consolidar sua reputação como um dos grandes mestres da pintura.
+                    </p>
+                </div>
             </article>
         </main>
         <aside id="sidebar">
@@ -61,10 +101,10 @@
                 <h4>Categorias</h4>
                 <nav>
                     <ul>
-                        <li><a href="#">Quadros</a></li>
-                        <li><a href="#">Aventuras</a></li>
+                        <li><a href="#">Obras</a></li>
+                        <li><a href="#">Vincent Van Gogh</a></li>
                         <li><a href="#">Viagens longas</a></li>
-                        <a href="#">Florestas</a>
+                        <li><a href="#">Florestas</a></li>
                     </ul>
                 </nav>
             </section>
@@ -80,7 +120,7 @@
     </div>
     <footer id="footer">
         <h2>Blog</h2>
-        <p>Os melhores registros de aventura</p>
+        <p>Top melhores quadros de Vincent Van Gogh</p>
         <p>2024 - @JaoVini</p>
     </footer>
 </body>
