@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bungee+Spice&family=Domine:wght@400..700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nabla&family=Oswald:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap');
+
 /* Geral */
 *{
     padding: 0;
@@ -7,9 +10,9 @@
 
 /* variáveis de cores */
 :root{
-    --background-header: #CBD0B9;
-    --background-main: #CBC9AD;
-    --color-hover: #656839;
+    --background-header: #D6D5C9;
+    --background-main: #D6D5C9;
+    --color-hover: #394EA0;
 }
 
 body{
@@ -17,6 +20,9 @@ body{
 }
 
 header{
+    z-index: 1;
+    position: sticky;
+    top: 0;
     background: var(--background-header);
 }
 
@@ -25,9 +31,11 @@ ul{
 }
 
 h2{
-    opacity: 0.7;
     color: var(--color-hover);
+    opacity: 0.7;
 }
+
+
 a{
     text-decoration: none;
     color: #444;
@@ -49,7 +57,7 @@ li{
 /* navbar */
 
 #navbar{
-    padding: 1.5rem 2.5rem;
+    padding: 10px 2.5rem;
     border-bottom: 2px solid #ddd;
 }
 
@@ -61,19 +69,35 @@ li{
     margin: 0 auto;
 }
 
+
 #nav-links{
     color: var(--color-hover);
     display: flex;
     gap: 1rem;
 }
 
+li > a,
+.navbar-inner > h2{
+    opacity: 0.9;
+    font-family: "Baskervville SC", serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
 /* conteúdo principal */
 
 .conteudo{
+    color: var(--color-hover);
     width: 50%;
     font-family: sans-serif;
     font-weight: 100;
     margin: 5rem 0rem;
+}
+
+.conteudo > h1{
+    font-family: "Baskervville SC", serif;
+    font-weight: 700;
+    font-style: normal;
 }
 
 .container{
@@ -104,14 +128,18 @@ li{
 .post img:hover{
     margin: 10px 1px;
     scale: 1.0;
-    box-shadow: 2px 2px 10px var(--color-hover);
-    filter: drop-shadow(1px 1px 10px var(--color-hover)); 
+    box-shadow: 5px 5px 10px var(--color-hover);
+    filter: drop-shadow(5px 5px 10px var(--color-hover)); 
 }
 
 .tittle,
 .description,
 .author{
-    margin-bottom: 1rem;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: italic;
+    margin-bottom: 2rem;
 }
 
 .tittle{
@@ -128,7 +156,7 @@ button{
     padding: 1rem;
     cursor: pointer;
     border-radius: 11px;
-    border: 2px solid var(--color-hover);
+    border: 1px solid var(--color-hover);
     background-color: transparent;
 }
 
@@ -161,7 +189,8 @@ button:hover{
 #categories,
 #tags{
     padding: 1.5rem;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color-hover);
+    border-radius: 20px;
     margin-bottom: 1rem;
 }
 
@@ -217,6 +246,10 @@ button:hover{
 /* responsivo */
 
 @media(max-width: 600px){
+
+    header{
+        position: initial;
+    }
     .container{
         justify-content: center;
         text-align: center;
