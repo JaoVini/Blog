@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,9 +14,9 @@
             <div class="navbar-inner">
                 <h2>Quadros de Van Gogh</h2>
                 <ul id="nav-links">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Categoria</a></li>
-                    <li><a href="">Pinturas</a></li>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#pinturas">Pinturas</a></li>
+                    <li><a href="#explorar">Explorar</a></li>
                 </ul>
             </div>
         </nav>
@@ -24,31 +24,33 @@
     <div class="container">
         
         <main id="posts-container">
-            
             <div class="conteudo">
                 <h1>Top melhores quadros de Vincent Van Gogh</h1>
                 <p><i>Na minha opinião</i></p>
             </div>
 
+            <div id="artista"></div>
             <article class="post-artista">
-                <h3 class="tittle"><a href="#">Vincent Van Gogh</a></h3>
+                <h3 class="tittle">Vincent Van Gogh</h3>
                 <img src="./assets/img/van_gogh.jpg" alt="Vicent Van Gogh">
                 <p class="description">
-                Vincent van Gogh foi um pintor pós-impressionista holandês, conhecido por sua abordagem emocional e inovadora na pintura. Nascido em 30 de março de 1853, na cidade de Zundert, na Holanda, Van Gogh é famoso por seu uso expressivo de cores e pinceladas ousadas.
-
+                <i><mark>Vincent van Gogh</mark> foi um <u>pintor pós-impressionista holandês</u>, conhecido por sua abordagem emocional e inovadora na pintura. Nascido em 30 de março de 1853, na cidade de Zundert, na Holanda, Van Gogh é famoso por seu uso expressivo de cores e pinceladas ousadas.
+                <br><br>
                 Ele produziu aproximadamente 2.100 obras de arte em um período de pouco mais de uma década, incluindo cerca de 860 pinturas a óleo. Entre suas obras mais conhecidas estão "A Noite Estrelada," "Girassóis," "A Casa Amarela" e "Os Irises."
-
-                Van Gogh passou por diversas fases em sua carreira artística, começando com influências sombrias e realistas antes de adotar o estilo mais vibrante e inovador que caracteriza suas obras mais famosas. Ele se mudou para Paris em 1886, onde foi influenciado pelo Impressionismo e pelo Neoimpressionismo, e mais tarde se estabeleceu em Arles, no sul da França, onde criou muitas de suas obras mais icônicas.
+                <br><br>
+                Van Gogh passou por diversas fases em sua carreira artística, começando com influências sombrias e realistas antes de adotar o estilo mais vibrante e inovador que caracteriza suas obras mais famosas. Ele se mudou para Paris em 1886, onde foi influenciado pelo <mark>Impressionismo</mark> e pelo <mark>Neoimpressionismo</mark>, e mais tarde se estabeleceu em Arles, no sul da França, onde criou muitas de suas obras mais icônicas.</i>
                 </p>
             </article>
             
+            <div id="obra_um"></div>
+            <br>
             <article class="post">
                 <h3 class="tittle"><a href="#">A Amendoeira em Flor</a></h3>
                 <img src="./assets/img/amendoeira.jpg" alt="Quadro Amendoeira em Flor - Vicent Van Gogh">
                 <p class="description">
                     Grandes ramos floridos como este contra um céu azul eram um dos temas favoritos de Van Gogh. As amendoeiras florescem no início da primavera, tornando-as um símbolo de uma nova vida. Van Gogh emprestou o tema, os contornos arrojados e o posicionamento da árvore no plano do quadro da gravura japonesa.
                 </p>
-                <p class="author">Por: João Vinícius </p>
+                <p class="author">Escrito por: João Vinícius </p>
                 <button onclick="lerMais(0, 0, 0,0)" class="button_mais" id="button_mais_one">Ler mais</button>
                 <button onclick="lerMenos(0, 0, 0, 0)" class="button_menos" id="button_menos_one">Ler menos</button>
                 <div class="description_extend" id="description_extend_post_one">
@@ -57,13 +59,16 @@
                     </p>
                 </div>
             </article>
+
+            <div id="obra_dois"></div>
+            <br>
             <article class="post">
                 <h3 class="tittle"><a href="#">Comedores de Batatas</a></h3>
                 <img src="./assets/img/the_potato_eaters.jpg" alt="Quadro natureza em Flor - Vicent Van Gogh">
                 <p class="description">
                     Van Gogh viu os Comedores de Batata como uma obra de arte, para a qual escolheu deliberadamente uma composição difícil para provar que estava a caminho de se tornar um bom pintor de figuras. A pintura deveria retratar a dura realidade da vida no campo, por isso deu aos camponeses rostos rudes e mãos ossudas e trabalhadoras. Ele queria mostrar desta forma que eles próprios “cultivaram a terra com estas mãos que põem no prato... que assim ganharam honestamente a sua comida”.
                 </p>
-                <p class="author">Por: João Vinícius </p>
+                <p class="author">Escrito por: João Vinícius </p>
                 <button onclick="lerMais(1,1,1)" class="button_mais" id="button_mais_two">Ler mais</button>
                 <button onclick="lerMenos(1,1,1)" class="button_menos" id="button_menos_two">Ler menos</button>
                 <div class="description_extend" id="description_extend_post_two">
@@ -72,13 +77,16 @@
                     </p>
                 </div>
             </article>
+
+            <div id="obra_tres"></div>
+            <br>
             <article class="post">
                 <h3 class="tittle"><a href="#">O Semeador</a></h3>
                 <img src="./assets/img/o_semeador.jpg" alt="Quadro O Semeador - Vicent Van Gogh">
                 <p class="description">
                     Van Gogh teve um interesse especial pelos semeadores ao longo de sua carreira artística. Ao todo, fez mais de 30 desenhos e pinturas sobre o tema. Ele pintou este semeador no outono de 1888. Na época, Van Gogh trabalhava junto com Paul Gauguin (1848-1903). Gauguin acreditava que em seu trabalho Van Gogh deveria recorrer menos à realidade e mais à sua imaginação.
                 </p>
-                <p class="author">Por: João Vinícius </p>
+                <p class="author">Escrito por: João Vinícius </p>
                 <button onclick="lerMais(2,2,2)" class="button_mais" id="button_mais_three">Ler mais</button>
                 <button onclick="lerMenos(2,2,2)" class="button_menos" id="button_menos_three">Ler menos</button>
                 <div class="description_extend" id="description_extend_post_three">
@@ -87,6 +95,9 @@
                     </p>
                 </div>
             </article>
+
+            <div id="obra_quatro"></div>
+            <br>
             <article class="post">
                 <h3 class="tittle"><a href="#">Noite Estrelada</a></h3>
                 <img src="./assets/img/starry_night.jpg" alt="Quadro Amendoeira em Flor - Vicent Van Gogh">
@@ -103,36 +114,32 @@
                 </div>
             </article>
         </main>
+        
         <aside id="sidebar">
             <section id="search-bar">
                 <h4>Busca</h4>
                 <form>
-                    <input type="text" placeholder="Pesquisa no blog" />
+                    <input type="text" placeholder="Pesquise no blog" />
                     <input type="submit" value="Buscar" />
                 </form>
             </section>
-            <section id="categories">
-                <h4>Categorias</h4>
-                <nav>
-                    <ul>
-                        <li><a href="#">Obras</a></li>
-                        <li><a href="#">Vincent Van Gogh</a></li>
-                        <li><a href="#">Viagens longas</a></li>
-                        <li><a href="#">Florestas</a></li>
-                    </ul>
-                </nav>
-            </section>
+           
+            <div id="explorar"></div>
             <section id="tags">
                 <h4>Tags</h4>
                 <div id="tags-container">
-                    <a href="#">A Amendoeira em Flor</a>
-                    <a href="#">Árvores e vegetação</a>
-                    <a href="#">O Semeador</a>
+                    <a href="#artista">Vincent Vang Gogh</a>
+                    <a href="#obra_um">A Amendoeira em Flor</a>
+                    <a href="#obra_dois">Comedores de Batatas</a> 
+                    <a href="#obra_tres">O Semeador</a>
+                    <a href="#obra_quatro">Noite Estrelada</a>
                 </div>
             </section>
         </aside>
     </div>
+    
     <footer id="footer">
+        <hr>
         <h2>Blog</h2>
         <p>Top melhores quadros de Vincent Van Gogh</p>
         <p>2024 - @JaoVini</p>
