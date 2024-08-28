@@ -10,20 +10,25 @@
 
 /* variáveis de cores */
 :root{
-    --background-header: #D6D5C9;
-    --background-main: #D6D5C9;
-    --color-hover: #394EA0;
+    --background-header: #F77F00;
+    --background-main: #EAE2B7;
+    --color-hover: #F77F00;
 }
 
 body{
-    background: var(--background-main);
+   background-color: var(--background-main)
 }
 
 header{
+    color: black;
     z-index: 1;
     position: sticky;
     top: 0;
     background: var(--background-header);
+}
+
+aside{
+    height: 100%;
 }
 
 ul{
@@ -31,8 +36,12 @@ ul{
 }
 
 h2{
-    color: var(--color-hover);
+    color: var(--background-main);
     opacity: 0.7;
+}
+
+h4{
+    color: #333;
 }
 
 
@@ -54,6 +63,17 @@ li{
     margin: 1rem 0px;
 }
 
+mark, 
+u{
+    color: var(--color-hover);
+    background-color: transparent;
+}
+
+hr{
+    border: 1px solid var(--color-hover);
+}
+
+
 /* navbar */
 
 #navbar{
@@ -73,19 +93,33 @@ li{
 
 
 #nav-links{
-    color: var(--color-hover);
     display: flex;
     gap: 1rem;
 }
 
 li > a,
 .navbar-inner > h2{
-    opacity: 0.9;
+    cursor: pointer;
+    color: var(--background-main);
     font-family: "Baskervville SC", serif;
-    font-weight: 800;
     font-style: normal;
 }
 
+.navbar-inner > h2:hover{
+    color: #fff;
+}
+
+li > a{
+    font-size: 1.1rem;
+}
+
+li > a:hover{
+    color: #fff;
+    padding: 2px;
+    border: 1px solid var(--background-main);
+    border-top: none;
+    border-bottom: none;
+}
 /* conteúdo principal */
 
 .conteudo{
@@ -93,7 +127,8 @@ li > a,
     width: 50%;
     font-family: sans-serif;
     font-weight: 100;
-    margin: 5rem 0rem;
+    margin: 5rem auto 0rem auto;
+    text-align: center;
 }
 
 .conteudo > h1{
@@ -114,14 +149,22 @@ li > a,
     flex: 3 1 0;
 }
 
-.post,
-.post-artista{
-    margin-bottom: 2.5rem;
+.post{
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
 }
+
 
 .post-artista{
    display: flex;
    flex-direction: column;
+   text-align: center;
+   align-items: center;
 
 }
 
@@ -147,6 +190,7 @@ li > a,
 }
 
 .post img:hover{
+    width: 70%;
     margin: 10px 1px;
     scale: 1.0;
     box-shadow: 5px 5px 10px var(--color-hover);
@@ -156,19 +200,27 @@ li > a,
 .tittle,
 .description,
 .author{
+    text-align: center;
     font-family: "Oswald", sans-serif;
     font-optical-sizing: auto;
     font-weight: 330;
     margin-bottom: 2rem;
 }
 
+.description{
+    color: #333;
+}
+
+.tittle > a{
+    color: var(--color-hover);
+}
 .tittle{
     font-size: 2rem;
 }
 
 .author{
-    color: #333;
-    font-weight: bold;
+    font-weight: 320;
+    color: var(--color-hover);
 }
 
 button{
@@ -196,7 +248,10 @@ button:hover{
 }
 
 .description_extend{
-    margin: 2rem 0px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 100px;
     display: none;
 }
 
@@ -207,16 +262,14 @@ button:hover{
 }
 
 #search-bar,
-#categories,
 #tags{
     padding: 1.5rem;
     border: 1px solid var(--color-hover);
-    border-radius: 20px;
+    border-radius: 10px;
     margin-bottom: 1rem;
 }
 
 #search-bar h4,
-#categories h4,
 #tags h4{
     font-size: 1.5rem;
     margin-bottom: 1.6rem;
@@ -234,7 +287,7 @@ button:hover{
 #search-bar input[type="submit"]{
     cursor: pointer;
     background-color: var(--color-hover);
-    color: #fff;
+    color: #eee;
     border: none;
 
 }
@@ -266,8 +319,7 @@ button:hover{
 
 /* responsivo */
 
-@media(max-width: 600px){
-
+@media(max-width: 1000px){
     header{
         position: sticky;
         top: 0;
@@ -286,13 +338,17 @@ button:hover{
 
     .description,
     .description_extend{
-        width: 85%;
+        width: 100%;
         margin: 1rem auto;
     }
 
     button{
         margin: auto;
         width: 50%;}
+
+    .post{
+        padding: 0px;
+    }
     
     .conteudo{
         color: var(--color-hover);
