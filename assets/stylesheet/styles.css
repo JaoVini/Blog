@@ -388,6 +388,7 @@ button:hover{
 
     #search-bar input[type="submit"]{
         background-color: var(--color-hover);
+        filter: drop-shadow(2px 2px 5px var(--color-hover)); 
     }
 
     footer{
